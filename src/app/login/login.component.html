@@ -1,0 +1,41 @@
+<div class="container col-6 text-light mt-5" style="width:400px; background-color: rgb(0, 0, 0,0.4);">
+    <form   [formGroup]="reactiveForm" (ngSubmit)="onSubmit()">
+        <div class="container-fluid border border-2  bg-black text-light">
+    
+        
+                <div class="row my-3  ">
+                    <div class="col-md-2">
+                        <label for="email">Email:</label>
+                    </div>
+                    <div class="col-md-10">
+                        <input type="email" class="form-control" id="email" placeholder="Enter  Email" name="email" formControlName="email">
+                    </div>
+    
+                </div>
+    
+    
+                <div class="row   my-3">
+                    <div class="col-md-2 ">
+                        <label for="password">password:</label>
+                    </div>
+                    <div class="col-md-10">
+                        <input type="password" class="form-control" id="password" placeholder="Enter  password" name="password" formControlName="password">
+                    </div>
+    
+                </div>
+    
+            <div class="row text-center my-3">
+               <a routerLink="booking"><input type="submit"  class="btn btn-primary "></a> 
+             
+            </div>
+    
+    
+              
+            
+        </div>
+    </form>
+  </div>
+  
+
+
+  
